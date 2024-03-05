@@ -5,6 +5,11 @@ body {
     --text-color: #252B42;
     font-size: 14px;
     line-height: 20px;
+    color: #252B42;
+}
+.page-width {
+    padding-left: var(--padding-container);
+    padding-right: var(--padding-container);
 }
 .button {
     border-radius: 5px;
@@ -79,6 +84,7 @@ body {
 		padding: 19px var(--padding-container) 24px;
 	}
 }
+
 /* ----------Banner-------- */
 .banner__media {
     background-color: transparent !important;
@@ -115,4 +121,51 @@ body {
 }
 .banner .banner__box>*+.banner__buttons {
     margin-top: 30px;
+}
+/* -----------Image with text---------- */
+.image-with-text__heading {
+	font-size: 40px;
+	font-weight: 700;
+	line-height: 50px;
+	letter-spacing: 0.2px;
+}
+.image-with-text__heading:before {
+	content: "";
+	display: block;
+	width: 94px;
+	height: 7px;
+	background: #E74040;
+	margin-bottom: 35px;
+}
+.image-with-text__content {
+	padding-left: 59px;
+	padding-right: 0;
+}
+.image-with-text__text {
+	letter-spacing: 0.2px;
+    color: var(--second-text-color);
+}
+.image-with-text__text p {
+    margin: 0 !important;
+}
+.image-with-text__text-item .image-with-text__content > *+* {
+	margin-top: 35px;
+}
+.image-with-text__text-item .link {
+	display: flex;
+	align-items: center;
+	font-weight: 700;
+	color: var(--color-primary);
+	gap: 10px;
+    margin-top: 38px;
+}
+@media screen and (min-width: 990px) {
+    .image-with-text__text-item .image-with-text__content {
+        padding: 0 0 4px 60px;
+    }
+}
+@media screen and (min-width: 750px) {
+    .image-with-text .image-with-text__media-item {
+        width: calc(41% - var(--grid-desktop-horizontal-spacing) / 2);
+    }
 }
