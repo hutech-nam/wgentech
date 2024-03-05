@@ -1,0 +1,8 @@
+development:
+  password: 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
+  theme_id: "140333482200"
+  store: wgentech-test.myshopify.com
+  ignore_files:
+    - "*.gif"
+    - "*.jpg" 
+    - config/settings_data.json
