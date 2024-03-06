@@ -304,6 +304,7 @@ body {
 	background: #FAFAFA;
 	border: 0;
 	padding-top: 16px;
+	padding-bottom: 16px;
 }
 /* ------------Reponsive------------- */
 @media screen and (max-width: 1024px) {
