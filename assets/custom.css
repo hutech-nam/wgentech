@@ -208,6 +208,9 @@ body {
 	border-radius: 20px !important;
 	overflow: hidden;
 }
+.multicolumn-card__info {
+	padding-bottom: 0 !important;
+}
 .multicolumn .multicolumn-list h3 {
 	font-size: 16px;
 	line-height: 24px;
@@ -301,4 +304,101 @@ body {
 	background: #FAFAFA;
 	border: 0;
 	padding-top: 16px;
+}
+/* ------------Reponsive------------- */
+@media screen and (max-width: 1024px) {
+	.header__icons {
+		padding-right: 0;
+	}
+}
+@media screen and (max-width: 989px) {
+	.header {
+		grid-template-columns: 1fr 2fr auto;
+	}
+	.multicolumn .page-width {
+		padding-left: var(--padding-container) !important;
+		padding-right: var(--padding-container) !important;
+	}
+	.footer__copyright {
+		display: block;
+		padding: 0;
+	}
+	.footer .footer__content-bottom {
+		padding: 0 0 15px;
+	}
+}
+@media screen and (max-width: 767px) {
+	.header {
+		grid-template-columns: 1fr 2fr auto;
+	}
+	.multicolumn .page-width {
+		padding-left: var(--padding-container) !important;
+		padding-right: var(--padding-container) !important;
+	}
+}
+@media screen and (max-width: 749px) {
+	body {
+		--padding-container: 15px;
+	}
+	.header {
+		grid-template-columns: 1fr 2fr 1fr;
+		padding-left: var(--padding-container) !important;
+		padding-right: var(--padding-container) !important;
+	}
+	.button__register {
+		display: none;
+	}
+	.header__icon--account {
+		font-size: 0;
+	}
+	.banner .banner__box {
+		padding-left: var(--padding-container);
+		padding-right: var(--padding-container);
+	}
+	.banner .banner__subheading {
+		font-size: 14px;
+		line-height: 20px;
+	}
+	.banner .banner__heading {
+		font-size: 40px;
+		line-height: 52px;
+		margin-top: 20px;
+	}
+	.banner .banner__box .banner__heading + * {
+		margin-top: 20px;
+		font-size: 14px;
+		line-height: 20px;
+	}
+	.image-with-text__content {
+		padding: 0 !important;
+	}
+	.image-with-text__text-item {
+		padding-bottom: 30px;
+	}
+	.image-with-text__heading:before {
+		width: 60px;
+		height: 4px;
+		margin-bottom: 20px;
+	}
+	.multicolumn .title-wrapper-with-link {
+		padding: 0;
+	}
+	.multicolumn-list:not(.slider) {
+		padding: 0 !important;
+	}
+	.footer-block__details-content .list-menu__item--link {
+		padding: 0 !important;
+	}
+	.footer__content-top {
+		padding-left: var(--padding-container) !important;
+		padding-right: var(--padding-container) !important;
+	}
+}
+@media screen and (max-width: 540px) {
+	
+	.multicolumn-list .grid__item {
+		width: 100% !important;
+		max-width: 100% !important;
+	}
+	
 }
